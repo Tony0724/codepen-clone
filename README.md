@@ -15,10 +15,11 @@ npm :
 yarn :
 ``` yarn add react-codemirror2 ```
 
-# react-typed
+# react-typed install
 npm :
 ``` npm i react-typed ```
 yarn :
 ``` yarn add react-typed ```
 
 If you have a question about codepen-clone, please leave me a message.
+email : 0724ksm@naver.com
