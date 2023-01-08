@@ -1,0 +1,174 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+::-webkit-scrollbar{
+    width: 10px;
+}
+
+::-webkit-scrollbar-track{
+    background-color: black;
+}
+
+::-webkit-scrollbar-thumb{
+    border-radius: 5px;
+    background-color: #ccc;
+}
+
+::-webkit-scrollbar-thumb:hover{
+    background-color: #aaa;
+}
+
+.main {
+    background-color: rgb(29, 27, 27);
+    height: 100vh;
+    color: white;
+}
+
+.main .main-h1 {
+    position: absolute;
+    top: 100px;
+    left: 100px;
+}
+
+.main .main-detail-p {
+    position: absolute;
+    top: 200px;
+    left: 100px;
+}
+
+.main .section-detail-p {
+    position: absolute;
+    top: 250px;
+    left: 100px;
+}
+
+.main button {
+    position: absolute;
+    top: 330px;
+    left: 100px;
+}
+
+.main .btn {
+    background: none;
+    border: 6px solid darkblue;
+    font-size: 1rem;
+    color: white;
+    padding: 20px 40px;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.main .btn-swap span {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 20px 40px;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+    border-radius: 20px;
+}
+
+.main .btn-swap:hover span {
+    opacity: 1;
+}
+
+.main .btn-swap::before {
+    content: "";
+    width: 0%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-color: darkblue;
+    transition: width 0.5s ease-in-out;
+}
+
+.main .btn-swap:hover::before {
+    width: 100%;
+}
+
+.main .right-container .right-box {
+    width: 400px;
+    height: 300px;
+    background-color: hsl(225, 6%, 25%);
+    border-radius: 50px;
+}
+
+.main .right-container .right-box:first-child {
+    position: absolute;
+    top: 20px;
+    right: 50px;
+}
+
+.main .right-container .right-box:nth-child(2) {
+    position: absolute;
+    top: 400px;
+    right: 50px;
+}
+
+.main .right-container .right-box:last-child {
+    position: absolute;
+    top: 400px;
+    right: 480px;
+}
+
+.main .right-container .right-box .title {
+    background-color: #000;
+    top: 0px;
+    left: 0px;
+    padding: 5px 10px;
+}
+
+.main .right-container .right-box .span_html_divOpen, .main .right-container .right-box .span_html_divClose {
+    color:#a88038
+}
+
+.main .right-container .right-box .span_html_className {
+    color:#e1ca72
+}
+
+.main .right-container .right-box .span_html_classValue {
+    color:#74b087
+}
+
+.main .right-container .right-box .span_html_Value {
+    color:white
+}
+
+.section-advantage {
+    height: 100vh;
+}
+
+.section-advantage h2 {
+    position: relative;
+    top: 10px;
+    left: 30px;
+    display: inline;
+}
+
+.section-advantage .section_box {
+    margin-top: 30px;
+    width: 50%;
+    height: 26.5%;
+    background-color: rgb(200, 200, 200);
+    margin-left: 50px;
+    border-radius: 20px;
+    padding: 20px;
+}
+
+.section-advantage .section_box:nth-of-type(2) {
+    margin-left: 47.5%;
+}
+
+.section-advantage .section_box .box_title {
+    font-size: 1.2rem;
+}
+
+.section-advantage .section_box .box_explain {
+    margin-top: 20px;
+}
